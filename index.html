@@ -1,0 +1,1445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aditya Rawat</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/project-section.css" />
+    <link rel="stylesheet" href="css/skills.css" />
+
+    <link rel="icon" href="images/logo.png" />
+    <script
+      src="https://kit.fontawesome.com/9650a62e47.js"
+      crossorigin="anonymous"
+    ></script>
+    <style type="text/css">
+      /* @font-face {
+            font-family: 'GT-Sectra-Fine-Bold';
+            font-weight: 700;
+            font-style: normal;
+            src: url("/assets/fonts/GT-Sectra-Fine-Medium.eot");
+            src: url("/assets/fonts/GT-Sectra-Fine-Medium.eot?#iefix") format("eot"), url("/assets/fonts/GT-Sectra-Fine-Medium.woff2") format("woff2"), url("/assets/fonts/GT-Sectra-Fine-Medium.woff") format("woff"), url("/assets/fonts/GT-Sectra-Fine-Medium.ttf") format("truetype")
+        }
+
+        @font-face {
+            font-family: 'GT-Sectra-Fine';
+            font-weight: 400;
+            font-style: normal;
+            src: url("/assets/fonts/GT-Sectra-Fine-Book.eot");
+            src: url("/assets/fonts/GT-Sectra-Fine-Book.eot?#iefix") format("eot"), url("/assets/fonts/GT-Sectra-Fine-Book.woff2") format("woff2"), url("/assets/fonts/GT-Sectra-Fine-Book.woff") format("woff"), url("/assets/fonts/GT-Sectra-Fine-Book.ttf") format("truetype")
+        }
+
+        @font-face {
+            font-family: 'nb_akademie_medium';
+            font-weight: 700;
+            font-style: normal;
+            src: url("/assets/fonts/nb_akademie_medium-webfont.eot");
+            src: url("/assets/fonts/nb_akademie_medium-webfont.eot?#iefix") format("eot"), url("/assets/fonts/nb_akademie_medium-webfont.woff2") format("woff2"), url("/assets/fonts/nb_akademie_medium-webfont.woff") format("woff"), url("/assets/fonts/nb_akademie_medium-webfont.ttf") format("truetype")
+        }
+
+        @font-face {
+            font-family: 'nb_akademie_light';
+            font-weight: 400;
+            font-style: normal;
+            src: url("/assets/fonts/nb_akademie_light-webfont.eot");
+            src: url("/assets/fonts/nb_akademie_light-webfont.eot?#iefix") format("eot"), url("/assets/fonts/nb_akademie_light-webfont.woff2") format("woff2"), url("/assets/fonts/nb_akademie_light-webfont.woff") format("woff"), url("/assets/fonts/nb_akademie_light-webfont.ttf") format("truetype")
+        } */
+
+      .st0 {
+        fill: #fff;
+      }
+
+      canvas {
+        background-color: #000;
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .section {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        border: 1px solid #fff;
+        top: 0px;
+        overflow: hidden;
+        left: 0;
+      }
+
+      .ml13,
+      .ml14,
+      .ml15,
+      .ml16 {
+        font-size: 1em;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-weight: 10;
+        display: inline-block;
+      }
+
+      .ml13 .letter,
+      .ml14 .letter,
+      .ml15 .letter,
+      .ml16 .letter {
+        display: inline-block;
+        line-height: 1em;
+      }
+
+      .custom-nav a {
+        text-decoration: none;
+        list-style-type: none;
+        font-family: "nb_akademie_light", "Microsoft Yahei", STXihei, "华文细黑",
+          sans-serif;
+        color: #fff !important;
+        display: flex;
+        flex-direction: row;
+      }
+
+      .custom-nav li {
+        text-decoration: none;
+        cursor: pointer;
+        margin-right: 70px;
+        padding-right: 50px;
+      }
+
+      .custom-nav li div #border {
+        border-bottom: #fff solid 2px;
+        left: 10%;
+        transition: 1s;
+        width: 0px;
+      }
+
+      .custom-nav li div:hover #border {
+        border-bottom: #fff solid 2px;
+        left: 10%;
+        width: 30px;
+      }
+    </style>
+  </head>
+
+  <body class="">
+    <header>
+      <nav class="navbar px-0">
+        <div class="container-fluid">
+          <div class="navbar-brand">
+            <!-- <a class="" href="index.html">
+						<img src="https://www.birthmarque.com/images/logo-header.svg" alt="Birth Marque Logo"/>
+                    </a> -->
+            <div id="arrow-line">
+              <svg
+                class="cursorNone"
+                id="arrow-svg"
+                viewBox="0 0 42 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M41.3536 4.35355C41.5488 4.15829 41.5488 3.84171 41.3536 3.64645L38.1716 0.464466C37.9763 0.269204 37.6597 0.269204 37.4645 0.464466C37.2692 0.659728 37.2692 0.976311 37.4645 1.17157L40.2929 4L37.4645 6.82843C37.2692 7.02369 37.2692 7.34027 37.4645 7.53553C37.6597 7.7308 37.9763 7.7308 38.1716 7.53553L41.3536 4.35355ZM0 4.5H41V3.5H0V4.5Z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-md-auto custom-nav">
+              <a href="#aboout">
+                <li class="nav-item">
+                  <div>
+                    <h1 class="ml13">ABOUT</h1>
+                    <div id="border"></div>
+                  </div>
+                  <!-- <a class="nav-link" href="about.html">About</a> -->
+                </li>
+              </a>
+              <a href="#skills">
+                <li class="nav-item">
+                  <div>
+                    <h1 class="ml14">SKILLS</h1>
+                    <div id="border"></div>
+                  </div>
+                </li>
+              </a>
+              <a href="#projects-section">
+                <li class="nav-item">
+                  <div>
+                    <h1 class="ml15">WORKS</h1>
+                    <div id="border"></div>
+                  </div>
+                </li>
+              </a>
+              <!-- <a href="#blogs">
+                <li class="nav-item">
+                  <div>
+                    <h1 class="ml14">Blogs</h1>
+                    <div id="border"></div>
+                  </div>
+                </li>
+              </a> -->
+              <a href="#contact-section">
+                <li class="nav-item">
+                  <div>
+                    <h1 class="ml16">CONTACT</h1>
+                    <div id="border"></div>
+                  </div>
+                </li>
+              </a>
+            </ul>
+          </div>
+          <button class="navbar-toggler" type="button" id="birthHamburger">
+            <span class="icon-bar one"></span>
+            <span class="icon-bar two"></span>
+            <span class="icon-bar three"></span>
+            <div class="SM-svgIcon hamBurgerIcon" id="icon">
+              <svg
+                version="1.1"
+                id="BM"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                width="80px"
+                height="74px"
+                viewBox="0 0 80 74"
+                style="enable-background: new 0 0 80 74"
+                xml:space="preserve"
+              >
+                <path
+                  class="st0"
+                  d="M34.8,69.8C26,64.1,23.5,55.8,20.3,47c-1.7-4.8-8-8.7-12.3-11.2c-14.3-8.5-7-20.1,3.9-27.5
+												C24.6-0.4,42.6-2.9,57.6,3.8c6.7,3,11.9,7.4,15.7,12.6c7.3,10.2,8.8,23.4,3.9,34.9C68.8,71.1,50.5,79.9,34.8,69.8z"
+                />
+              </svg>
+            </div>
+          </button>
+          <div class="navbar-menuWrap" id="menuWrap">
+            <div class="container-fluid py-4">
+              <ul class="navbar-nav h-100 justify-content-center w-75 pt-5">
+                <li class="nav-item">
+                  <a class="nav-link" href="#aboout">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#skills">SKILLS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#projects-section">Works</a>
+                </li>
+                <!-- <li class="nav-item">
+								<a class="nav-link" href="case-studies.html">Case Studies</a>
+							</li> -->
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact-section">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="scroll-down">
+      <div id="social-contact">
+        <a
+          target="_blank"
+          class="social-link cursorNone"
+          href="https://github.com/CS-Aditya-Rawat"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a
+          target="_blank"
+          class="social-link cursorNone"
+          href="https://twitter.com/CsAdityaRawat"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a
+          target="_blank"
+          class="social-link cursorNone"
+          href="https://www.linkedin.com/in/cs-aditya-rawat/"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+      </div>
+    </div>
+    <!-- <div class="section"> -->
+    <!-- <canvas id="canvas"></canvas> -->
+    <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/vaadin" title="Vaadin">Vaadin</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
+
+    <div class="page-outer" id="main">
+      <section
+        id="section-home"
+        class="section-full section-home js-page-home loaded smooth-scroll-wrapper"
+      >
+        <div class="text-zone">
+          <span class="tags top-tags">
+            &lt;/html&gt; <br />
+            &lt;body&gt;</span
+          >
+          <h1
+            aria-label=" Hi,  I’m
+               
+               ack,  web developer"
+            class="blast-root"
+          >
+            <span class="blast" aria-hidden="true" style="opacity: 1">H</span
+            ><span class="blast" aria-hidden="true" style="opacity: 1">i</span
+            ><span class="blast" aria-hidden="true" style="opacity: 1">,</span>
+            <br /><span class="blast" aria-hidden="true" style="opacity: 1"
+              >I</span
+            ><span class="blast" aria-hidden="true" style="opacity: 1">’</span
+            ><span class="blast" aria-hidden="true" style="opacity: 1">m</span>
+            &nbsp;
+            <span
+              ><a class="audio-clip" onclick="fullname.playclip()"
+                ><i class="fa fa-volume-up"></i></a
+            ></span>
+            <img
+              width="53"
+              height="72"
+              src="images/logo.png"
+              alt="Wordpress Developer Name, Web Developer Name"
+              class="animation-logo"
+            />
+            <span class="blast" aria-hidden="true" style="opacity: 1">d</span
+            ><span class="blast" aria-hidden="true" style="opacity: 1">i</span
+            ><span class="blast" aria-hidden="true" style="opacity: 1">t</span
+            ><span class="blast" aria-hidden="true" style="opacity: 1">y</span
+            ><span class="blast" aria-hidden="true" style="opacity: 1">a</span
+            ><span class="blast" aria-hidden="true" style="opacity: 1">,</span>
+            <br />
+
+            <!-- <span>
+              <div id="name-container">
+                <span id="text1"></span>
+                <span id="text2"></span>
+              </div>
+
+              <svg id="filters">
+                <defs>
+                  <filter id="threshold">
+                    <feColorMatrix
+                      in="SourceGraphic"
+                      type="matrix"
+                      values="1 0 0 0 0
+									0 1 0 0 0
+									0 0 1 0 0
+									0 0 0 255 -140"
+                    />
+                  </filter>
+                </defs>
+              </svg>
+            </span> -->
+            <span class="blast" aria-hidden="true" style="opacity: 1">W</span
+            ><span class="blast" aria-hidden="true" style="opacity: 1">e</span
+            ><span class="blast" aria-hidden="true" style="opacity: 1">b</span>
+            <span class="blast" aria-hidden="true" style="opacity: 1">D</span
+            ><span class="blast" aria-hidden="true" style="opacity: 1">e</span
+            ><span class="blast" aria-hidden="true" style="opacity: 1">v</span
+            ><span class="blast" aria-hidden="true" style="opacity: 1">e</span
+            ><span class="blast" aria-hidden="true" style="opacity: 1">l</span
+            ><span class="blast" aria-hidden="true" style="opacity: 1">o</span
+            ><span class="blast" aria-hidden="true" style="opacity: 1">p</span
+            ><span class="blast" aria-hidden="true" style="opacity: 1">e</span
+            ><span class="blast" aria-hidden="true" style="opacity: 1">r</span>
+          </h1>
+          <p class="gray-text">
+            DATA SCIENTIST | MACHINE LEARNING & AI | BASH SCRIPTING | C++
+          </p>
+        </div>
+
+        <canvas
+          style="
+            position: absolute;
+            left: 0;
+            z-index: -1;
+            background-color: #1d1d1d;
+          "
+          id="canvas"
+          width="1536"
+          height="722"
+        ></canvas>
+
+        <div class="scroll-down scroll-down--left">
+          <span>scroll down</span>
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fal"
+            data-icon="arrow-down"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+            class="svg-inline--fa fa-arrow-down fa-w-14 fa-5x"
+          >
+            <path
+              fill="currentColor"
+              d="M443.5 248.5l-7.1-7.1c-4.7-4.7-12.3-4.7-17 0L241 419.9V44c0-6.6-5.4-12-12-12h-10c-6.6 0-12 5.4-12 12v375.9L28.5 241.4c-4.7-4.7-12.3-4.7-17 0l-7.1 7.1c-4.7 4.7-4.7 12.3 0 17l211 211.1c4.7 4.7 12.3 4.7 17 0l211-211.1c4.8-4.8 4.8-12.3.1-17z"
+              class=""
+            ></path>
+          </svg>
+        </div>
+      </section>
+
+      <section id="aboout">
+        <div id="about-section">
+          <div class="hiddena" id="about-section-title">
+            <div class="popo hidden">
+              <h1 class="cursor-Big">About Me</h1>
+            </div>
+          </div>
+        </div>
+        <div class="section-about">
+          <div class="text-zone">
+            <p>
+              Hello there! 👋 I'm Aditya Rawat, a passionate Python enthusiast
+              with a keen interest in Machine Learning and Artificial
+              Intelligence. I am always excited to explore new technologies and
+              solve challenging problems with the power of programming.
+            </p>
+            <p>
+              🐍 Python Enthusiast: Python has been my language of choice, and
+              I've developed a strong foundation in it over the years. I love
+              its simplicity, versatility, and the extensive libraries that
+              allow me to accomplish a wide range of tasks efficiently.
+            </p>
+            <p>
+              🤖 Machine Learning & AI Enthusiast: Driven by a fascination for
+              the potential of Artificial Intelligence, I am actively exploring
+              the realm of Machine Learning. From data preprocessing to model
+              building and evaluation, I enjoy working on real-world ML projects
+              and experimenting with algorithms to gain valuable insights.
+            </p>
+            <p>
+              💡 Problem-Solving & Automation: I'm a firm believer in the power
+              of automation to boost productivity and simplify complex tasks.
+              Whether it's writing bash scripts for automating repetitive
+              operations or crafting Python scripts to streamline workflows, I
+              find joy in creating solutions that save time and effort.
+            </p>
+            <p>
+              🔍 Continuous Learning: In the fast-paced world of technology, I
+              understand the importance of staying up-to-date with the latest
+              trends and advancements. I am committed to continuous learning and
+              staying on top of the ever-evolving landscape of Python, Machine
+              Learning, and AI.
+            </p>
+            <p>
+              🚀 Seeking Opportunities: I am currently open to exciting
+              opportunities in the field of Python development, Machine
+              Learning, or AI. If you have a challenging project or are looking
+              for someone with a passion for problem-solving, I'd love to
+              connect!
+            </p>
+            <p>
+              Ability to translate business requirements into technical
+              solutions.
+            </p>
+            <p>
+              More about my experience and work you'll find on
+              <a rel="skills" href="#skills">Skills</a>
+              and
+              <a rel="about" href="#projects-section">Work</a> .
+            </p>
+            <a class="dl-button">
+              <div>
+                <div class="icon">
+                  <div>
+                    <svg class="arrow" viewBox="0 0 20 18" fill="currentColor">
+                      <polygon
+                        points="8 0 12 0 12 9 15 9 10 14 5 9 8 9"
+                      ></polygon>
+                    </svg>
+                    <svg class="shape" viewBox="0 0 20 18" fill="currentColor">
+                      <path
+                        d="M4.82668561,0 L15.1733144,0 C16.0590479,0 16.8392841,0.582583769 17.0909106,1.43182334 L19.7391982,10.369794 C19.9108349,10.9490677 19.9490212,11.5596963 19.8508905,12.1558403 L19.1646343,16.3248465 C19.0055906,17.2910371 18.1703851,18 17.191192,18 L2.80880804,18 C1.82961488,18 0.994409401,17.2910371 0.835365676,16.3248465 L0.149109507,12.1558403 C0.0509788145,11.5596963 0.0891651114,10.9490677 0.260801785,10.369794 L2.90908938,1.43182334 C3.16071592,0.582583769 3.94095214,0 4.82668561,0 Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span></span>
+                </div>
+                <div class="label">
+                  <div class="show default">Resume</div>
+                  <div class="state">
+                    <div class="counter">
+                      <ul>
+                        <li></li>
+                        <li>1</li>
+                      </ul>
+                      <ul>
+                        <li>0</li>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li>0</li>
+                      </ul>
+                      <ul>
+                        <li>0</li>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li>0</li>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li>0</li>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li>0</li>
+                      </ul>
+                      <span>%</span>
+                    </div>
+                    <span>Done</span>
+                  </div>
+                </div>
+                <div class="progress"></div>
+              </div>
+            </a>
+            <p></p>
+          </div>
+
+          <div
+            class="tilt tilt-movie"
+            data-tilt
+            data-tilt-glare="false"
+            data-tilt-scale="0.9"
+          >
+            <img src="images/profile.png" />
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <div id="skill-section">
+          <div class="hiddens" id="skill-section-title">
+            <div class="popo hidden">
+              <h1 class="cursor-Big">My Skills</h1>
+              <!-- <h1 class="cursor-Big">Experience</h1> -->
+            </div>
+          </div>
+        </div>
+        <div class="section-about">
+          <div class="text-zone">
+            <p>
+              Hello, I'm Aditya Rawat, a dedicated Python enthusiast with a
+              strong inclination towards Machine Learning and Artificial
+              Intelligence. Python has been my language of choice due to its
+              simplicity and versatility, enabling me to efficiently accomplish
+              a wide range of tasks. I am passionate about exploring the
+              potential of AI and enjoy working on real-world ML projects, from
+              data preprocessing to model building and evaluation.
+            </p>
+            <p>
+              My belief in the power of automation drives me to create Python
+              and bash scripts that streamline workflows, saving time and
+              effort. As a continuous learner, I stay updated with the latest
+              trends in Python, AI, and ML. I'm currently seeking exciting
+              opportunities in Python development, Machine Learning, or AI. If
+              you're looking for a proactive problem solver with a passion for
+              innovation, let's connect and create transformative solutions
+              together!
+            </p>
+            <br />
+            <div class="flex-skills">
+              <div class="accordion">
+                <div class="accordion-item">
+                  <div class="accordion-item-header">
+                    { } Programming Languages
+                  </div>
+                  <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">
+                      More Than 3 years
+                      <div class="skills__list grid">
+                        <div class="skills__data">
+                          <div class="skills__titles">
+                            <h3 class="skills__name">Python</h3>
+                            <span class="skills__number">100%</span>
+                          </div>
+                          <div class="skills__bar">
+                            <span
+                              class="skills__percentage skills__html"
+                            ></span>
+                          </div>
+                        </div>
+
+                        <div class="skills__data">
+                          <div class="skills__titles">
+                            <h3 class="skills__name">C++</h3>
+                            <span class="skills__number">70%</span>
+                          </div>
+                          <div class="skills__bar">
+                            <span class="skills__percentage skills__css"></span>
+                          </div>
+                        </div>
+
+                        <div class="skills__data">
+                          <div class="skills__titles">
+                            <h3 class="skills__name">Javascript</h3>
+                            <span class="skills__number">60%</span>
+                          </div>
+                          <div class="skills__bar">
+                            <span class="skills__percentage skills__js"></span>
+                          </div>
+                        </div>
+
+                        <div class="skills__data">
+                          <div class="skills__titles">
+                            <h3 class="skills__name">C</h3>
+                            <span class="skills__number">70%</span>
+                          </div>
+                          <div class="skills__bar">
+                            <span class="skills__percentage skills__js"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-item-header">
+                    <i class="fas fa-database"></i>&nbsp;Backend Developer
+                  </div>
+                  <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">
+                      More Than 3 year
+                      <div class="skills__data">
+                        <div class="skills__titles">
+                          <h3 class="skills__name">Python</h3>
+                          <span class="skills__number">90%</span>
+                        </div>
+                        <div class="skills__bar">
+                          <span class="skills__percentage skills__node"></span>
+                        </div>
+                      </div>
+                      <div class="skills__data">
+                        <div class="skills__titles">
+                          <h3 class="skills__name">Linux | Bash</h3>
+                          <span class="skills__number">60%</span>
+                        </div>
+                        <div class="skills__bar">
+                          <span class="skills__percentage skills__node"></span>
+                        </div>
+                      </div>
+                      <div class="skills__list grid">
+                        <div class="skills__data">
+                          <div class="skills__titles">
+                            <h3 class="skills__name">Node Js</h3>
+                            <span class="skills__number">70%</span>
+                          </div>
+                          <div class="skills__bar">
+                            <span
+                              class="skills__percentage skills__node"
+                            ></span>
+                          </div>
+                        </div>
+
+                        <div class="skills__data">
+                          <div class="skills__titles">
+                            <h3 class="skills__name">Express Js</h3>
+                            <span class="skills__number">70%</span>
+                          </div>
+                          <div class="skills__bar">
+                            <span
+                              class="skills__percentage skills__express"
+                            ></span>
+                          </div>
+                        </div>
+
+                        <div class="skills__data">
+                          <div class="skills__titles">
+                            <h3 class="skills__name">MongoDB</h3>
+                            <span class="skills__number">80%</span>
+                          </div>
+                          <div class="skills__bar">
+                            <span
+                              class="skills__percentage skills__mongo"
+                            ></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-item-header">
+                    <i class="fas fa-tools"></i>&nbsp;Tools & &nbsp;<i
+                      class="fas fa-paint-roller"
+                    ></i
+                    >&nbsp;Frameworks
+                  </div>
+                  <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">
+                      More Than 3 year
+                      <div class="skills__list grid">
+                        <div class="skills__data">
+                          <div class="skills__titles">
+                            <h3 class="skills__name">Git & Github</h3>
+                            <span class="skills__number">80%</span>
+                          </div>
+                          <div class="skills__bar">
+                            <span
+                              class="skills__percentage skills__canva"
+                            ></span>
+                          </div>
+                        </div>
+
+                        <div class="skills__data">
+                          <div class="skills__titles">
+                            <h3 class="skills__name">
+                              Amazon Web Service (AWS)
+                            </h3>
+                            <span class="skills__number">70%</span>
+                          </div>
+                          <div class="skills__bar">
+                            <span
+                              class="skills__percentage skills__figma"
+                            ></span>
+                          </div>
+                        </div>
+
+                        <div class="skills__data">
+                          <div class="skills__titles">
+                            <h3 class="skills__name">Canva</h3>
+                            <span class="skills__number">90%</span>
+                          </div>
+                          <div class="skills__bar">
+                            <span class="skills__percentage skills__git"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- <div class="accordion">
+                <div class="accordion-item">
+                  <div class="accordion-item-header">{ } Operating System</div>
+                  <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">
+                      <div class="skills__list grid">
+                        <div class="skills__data">
+                          <div class="skills__titles">
+                            <h3 class="skills__name">Linux</h3>
+                            <span class="skills__number">90%</span>
+                          </div>
+                          <div class="skills__bar">
+                            <span
+                              class="skills__percentage skills__linux"
+                            ></span>
+                          </div>
+                        </div>
+
+                        <div class="skills__data">
+                          <div class="skills__titles">
+                            <h3 class="skills__name">Mac</h3>
+                            <span class="skills__number">80%</span>
+                          </div>
+                          <div class="skills__bar">
+                            <span class="skills__percentage skills__mac"></span>
+                          </div>
+                        </div>
+
+                        <div class="skills__data">
+                          <div class="skills__titles">
+                            <h3 class="skills__name">Windows</h3>
+                            <span class="skills__number">100%</span>
+                          </div>
+                          <div class="skills__bar">
+                            <span class="skills__percentage skills__win"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-item-header">
+                    <i class="fas fa-database"></i>&nbsp;Languages
+                  </div>
+                  <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">
+                      More Than 2 years
+                      <div class="skills__list grid">
+                        <div class="skills__data">
+                          <div class="skills__titles">
+                            <h3 class="skills__name">HTML</h3>
+                            <span class="skills__number">90%</span>
+                          </div>
+                          <div class="skills__bar">
+                            <span
+                              class="skills__percentage skills__html"
+                            ></span>
+                          </div>
+                        </div>
+
+                        <div class="skills__data">
+                          <div class="skills__titles">
+                            <h3 class="skills__name">CSS</h3>
+                            <span class="skills__number">80%</span>
+                          </div>
+                          <div class="skills__bar">
+                            <span class="skills__percentage skills__css"></span>
+                          </div>
+                        </div>
+
+                        <div class="skills__data">
+                          <div class="skills__titles">
+                            <h3 class="skills__name">Javascript</h3>
+                            <span class="skills__number">60%</span>
+                          </div>
+                          <div class="skills__bar">
+                            <span class="skills__percentage skills__js"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-item-header">
+                    <i class="fas fa-tools"></i>&nbsp;Tools & &nbsp;<i
+                      class="fas fa-paint-roller"
+                    ></i
+                    >&nbsp;Designer
+                  </div>
+                  <div class="accordion-item-body">
+                    <div class="accordion-item-body-content">
+                      More Than 3 years
+                      <div class="skills__list grid">
+                        <div class="skills__data">
+                          <div class="skills__titles">
+                            <h3 class="skills__name">HTML</h3>
+                            <span class="skills__number">90%</span>
+                          </div>
+                          <div class="skills__bar">
+                            <span
+                              class="skills__percentage skills__html"
+                            ></span>
+                          </div>
+                        </div>
+
+                        <div class="skills__data">
+                          <div class="skills__titles">
+                            <h3 class="skills__name">CSS</h3>
+                            <span class="skills__number">80%</span>
+                          </div>
+                          <div class="skills__bar">
+                            <span class="skills__percentage skills__css"></span>
+                          </div>
+                        </div>
+
+                        <div class="skills__data">
+                          <div class="skills__titles">
+                            <h3 class="skills__name">Javascript</h3>
+                            <span class="skills__number">60%</span>
+                          </div>
+                          <div class="skills__bar">
+                            <span class="skills__percentage skills__js"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+          <div class="skills-charts">
+            <div id="myCanvasContainer">
+              <canvas width="500" height="500" id="myCanvas">
+                <ul>
+                  <li>
+                    <a
+                      data-weight="25"
+                      href="https://en.wikipedia.org/wiki/HTML"
+                      target="_blank"
+                      >HTML</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      data-weight="25"
+                      href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets"
+                      target="_blank"
+                      >CSS</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      data-weight="25"
+                      href="https://en.wikipedia.org/wiki/JavaScript"
+                      target="_blank"
+                      >C++</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      data-weight="25"
+                      href="https://en.wikipedia.org/wiki/JavaScript"
+                      target="_blank"
+                      >Python</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      data-weight="24"
+                      href="https://en.wikipedia.org/wiki/Representational_state_transfer"
+                      target="_blank"
+                      >REST</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      data-weight="14"
+                      href="https://en.wikipedia.org/wiki/JSON"
+                      target="_blank"
+                      >JSON</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      data-weight="13"
+                      href="https://en.wikipedia.org/wiki/XML"
+                      target="_blank"
+                      >AWS</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      data-weight="26"
+                      href="https://expressjs.com/"
+                      target="_blank"
+                      >Linux</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      data-weight="26"
+                      href="https://www.djangoproject.com/"
+                      target="_blank"
+                      >Bash</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      data-weight="21"
+                      href="https://en.wikipedia.org/wiki/Node.js"
+                      target="_blank"
+                      >Node JS</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      data-weight="17"
+                      href="https://en.wikipedia.org/wiki/Git"
+                      target="_blank"
+                      >Git</a
+                    >
+                  </li>
+                  <li>
+                    <a data-weight="17" href="" target="_blank">_lodash</a>
+                  </li>
+                  <li>
+                    <a
+                      data-weight="23"
+                      href="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)"
+                      target="_blank"
+                      >Bootstrap</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      data-weight="15"
+                      href="https://en.wikipedia.org/wiki/Sass_(stylesheet_language)"
+                      target="_blank"
+                      >Flask</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      data-weight="24"
+                      href="https://reactjs.org/"
+                      target="_blank"
+                      >Python</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      data-weight="12"
+                      href="https://en.wikipedia.org/wiki/JQuery"
+                      target="_blank"
+                      >MYSQL</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      data-weight="19"
+                      href="http://mongoosejs.com/"
+                      target="_blank"
+                      >SQl</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      data-weight="19"
+                      href="https://www.mongodb.com/"
+                      target="_blank"
+                      >MongoDB</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      data-weight="19"
+                      href="https://www.npmjs.com/"
+                      target="_blank"
+                      >npm</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      data-weight="19"
+                      href="https://nextjs.org/"
+                      target="_blank"
+                      >Next JS</a
+                    >
+                  </li>
+                </ul>
+              </canvas>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-about" id="projects-section">
+        <div class="hidden" id="projects-section-title">
+          <div class="popo hidden">
+            <h1 class="cursor-Big">Work & Projects</h1>
+          </div>
+        </div>
+      </section>
+      <div
+        class="content"
+        style="
+          background: #1d1d1d;
+          color: #1c1d25;
+          font-family: LibreBaskerville-Regular, Palatino Linotype,
+            Times New Roman, serif;
+          -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+          will-change: transform;
+          overflow-x: hidden;
+          line-height: 1.5;
+          -webkit-tap-highlight-color: transparent;
+          transition: background-color 0.25s;
+          padding-top: 30px;
+          padding-bottom: 30px;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        "
+      >
+        <ul class="case-studies-list">
+          <li>
+            <a
+              href="https://netflix-clone0x.netlify.app/"
+              style="background-image: url('../img/netflix.png')"
+              class="case-study"
+              target="_blank"
+            >
+              <div class="case-study-mask"></div>
+              <div class="case-study-reveal-mask"></div>
+              <div class="case-study-mask-number">
+                <div class="case-study-mask-back">01</div>
+                <div class="case-study-mask-front">
+                  <div data-index="01" class="case-study-mask-overlay">
+                    "01"
+                  </div>
+                </div>
+              </div>
+              <div class="case-study-text-section">
+                <h3 itemprop="name" class="h2 case-study-title">
+                  CHICKEN DISEASE CLASSIFIER
+                </h3>
+                <h5 itemprop="description" class="case-study-subtitle">
+                  End-to-End deep learning project using MLOps DVC pipeline,
+                  showcasing deployments on AWS platforms. The project aims to
+                  classify images of chickens based on various diseases they
+                  might have, thereby enabling early detection and effective
+                  disease management.
+                </h5>
+                <button class="the-button call-to-button">
+                  <span class="button-text">Source Code</span>
+                  <div class="button-mask"></div>
+                  <span class="button-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewbox="0 0 476.213 476.213"
+                    >
+                      <path
+                        d="M405.606 167.5l-21.212 21.213 34.393 34.393H0v30h418.787L384.394 287.5l21.212 21.213 70.607-70.607"
+                      ></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </a>
+          </li>
+
+          <!-- 2nd Project -->
+          <li>
+            <a
+              href="https://github.com/CS-Aditya-Rawat/zomato-rating-prediction"
+              style="background-image: url('')"
+              class="case-study"
+              target="_blank"
+            >
+              <div class="case-study-mask"></div>
+              <div class="case-study-reveal-mask"></div>
+              <div class="case-study-mask-number">
+                <div class="case-study-mask-back">02</div>
+                <div class="case-study-mask-front">
+                  <div data-index="02" class="case-study-mask-overlay">
+                    "02"
+                  </div>
+                </div>
+              </div>
+              <div class="case-study-text-section">
+                <h3 itemprop="name" class="h2 case-study-title">
+                  Zomato Rating Prediction
+                </h3>
+                <h5 itemprop="description" class="case-study-subtitle">
+                  The main goal of this project is to perform extensive
+                  Exploratory Data Analysis(EDA) on the Zomato Dataset and build
+                  an appropriate Machine Learning Model that will help various
+                  Zomato Restaurants to predict their respective Ratings based
+                  on certain features.
+                </h5>
+                <button class="the-button call-to-button">
+                  <span class="button-text">Source Code</span>
+                  <div class="button-mask"></div>
+                  <span class="button-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewbox="0 0 476.213 476.213"
+                    >
+                      <path
+                        d="M405.606 167.5l-21.212 21.213 34.393 34.393H0v30h418.787L384.394 287.5l21.212 21.213 70.607-70.607"
+                      ></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </a>
+          </li>
+          <!-- 2nd Project -->
+          <li>
+            <a
+              href="https://github.com/CS-Aditya-Rawat/LAzY"
+              style="background-image: url('img/lazy.png')"
+              class="case-study"
+              target="_blank"
+            >
+              <div class="case-study-mask"></div>
+              <div class="case-study-reveal-mask"></div>
+              <div class="case-study-mask-number">
+                <div class="case-study-mask-back">03</div>
+                <div class="case-study-mask-front">
+                  <div data-index="03" class="case-study-mask-overlay">
+                    "03"
+                  </div>
+                </div>
+              </div>
+              <div class="case-study-text-section">
+                <h3 itemprop="name" class="h2 case-study-title">LAzY</h3>
+                <h5 itemprop="description" class="case-study-subtitle">
+                  A social Media platform with realtime chatting.
+                </h5>
+                <button class="the-button call-to-button">
+                  <span class="button-text">Source Code</span>
+                  <div class="button-mask"></div>
+                  <span class="button-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewbox="0 0 476.213 476.213"
+                    >
+                      <path
+                        d="M405.606 167.5l-21.212 21.213 34.393 34.393H0v30h418.787L384.394 287.5l21.212 21.213 70.607-70.607"
+                      ></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </a>
+          </li>
+
+          <!-- 3nd Project -->
+          <li>
+            <a
+              href="https://2048-animate.netlify.app/"
+              style="background-image: url('img/2048.gif')"
+              class="case-study"
+              target="_blank"
+            >
+              <div class="case-study-mask"></div>
+              <div class="case-study-reveal-mask"></div>
+              <div class="case-study-mask-number">
+                <div class="case-study-mask-back">04</div>
+                <div class="case-study-mask-front">
+                  <div data-index="04" class="case-study-mask-overlay">
+                    "04"
+                  </div>
+                </div>
+              </div>
+              <div class="case-study-text-section">
+                <h3 itemprop="name" class="h2 case-study-title">2048</h3>
+                <h5 itemprop="description" class="case-study-subtitle">
+                  Recreate the 2048 game in react with animations
+                </h5>
+                <button class="the-button call-to-button">
+                  <span class="button-text">Test It Now</span>
+                  <div class="button-mask"></div>
+                  <span class="button-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewbox="0 0 476.213 476.213"
+                    >
+                      <path
+                        d="M405.606 167.5l-21.212 21.213 34.393 34.393H0v30h418.787L384.394 287.5l21.212 21.213 70.607-70.607"
+                      ></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <section id="contact-section" style="margin-top: 0px">
+        <div class="hidden" id="contact-section-title">
+          <div class="popo hiddenc">
+            <h1 class="cursor-Big">Contact Me</h1>
+            <!-- <h1 class="cursor-Big">Experience</h1> -->
+          </div>
+        </div>
+
+        <div class="section-about contact-sec">
+          <div class="text-zone">
+            <form
+              action="https://formspree.io/f/xeqvljny"
+              method="POST"
+              id="my-form"
+              class="custom-form"
+            >
+              <div class="col-custom input-effect">
+                <input
+                  class="effect-21"
+                  type="text"
+                  id="firstName"
+                  name="firstName"
+                  placeholder=""
+                  required
+                />
+                <label>First Name</label>
+                <span class="focus-border">
+                  <i></i>
+                </span>
+              </div>
+              <div class="col-custom input-effect">
+                <input
+                  class="effect-21"
+                  type="text"
+                  id="lastName"
+                  name="lastName"
+                  placeholder=""
+                />
+                <label>Last Name</label>
+                <span class="focus-border">
+                  <i></i>
+                </span>
+              </div>
+              <div class="col-custom input-effect">
+                <input
+                  class="effect-21"
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder=""
+                  required
+                />
+                <label>Email</label>
+                <span class="focus-border">
+                  <i></i>
+                </span>
+              </div>
+              <div class="col-custom input-effect" style="height: 105px">
+                <textarea
+                  class="effect-21"
+                  type="textarea"
+                  id="message"
+                  name="message"
+                  required
+                ></textarea>
+                <label>Message</label>
+                <span class="focus-border">
+                  <i></i>
+                </span>
+              </div>
+              <div
+                class="col-custom"
+                style="
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  padding-top: 10px;
+                "
+              >
+                <div class="center">
+                  <button class="btn" type="submit">
+                    <svg
+                      width="180px"
+                      height="60px"
+                      viewBox="0 0 180 60"
+                      class="border"
+                    >
+                      <polyline
+                        points="179,1 179,59 1,59 1,1 179,1"
+                        class="bg-line"
+                      />
+                      <polyline
+                        points="179,1 179,59 1,59 1,1 179,1"
+                        class="hl-line"
+                      />
+                    </svg>
+                    <span>SUBMIT</span>
+                  </button>
+                </div>
+              </div>
+            </form>
+            <div id="status"></div>
+          </div>
+
+          <div class="text-zone connect-me">
+            <a
+              target="_blank"
+              class="cursorNone"
+              href="https://github.com/CS-Aditya-Rawat"
+              ><i class="fab fa-github"></i>&nbsp;CsAdityaRawat</a
+            ><br /><br />
+            <a
+              target="_blank"
+              class="cursorNone"
+              href="https://twitter.com/CsAdityaRawat"
+              ><i class="fab fa-twitter"></i>&nbsp;@Aditya Rawat</a
+            ><br /><br />
+            <a
+              target="_blank"
+              class="cursorNone"
+              href="https://www.linkedin.com/in/cs-aditya-rawat"
+              ><i class="fab fa-linkedin-in"></i>&nbsp;Aditya Rawat</a
+            ><br /><br />
+            <a
+              target="_blank"
+              class="cursorNone"
+              href="mailto:adityarawatinferno@gmail.com"
+              ><i class="fas fa-envelope"></i>&nbsp;@adityarawat...com</a
+            ><br /><br />
+            <a
+              target="_blank"
+              class="cursorNone"
+              href="https://www.instagram.com/itz_adi.10/"
+              ><i class="fab fa-instagram"></i>&nbsp;itz_adi.10</a
+            ><br /><br />
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <div class="bottom-footer" style="margin-top: 50px">
+        <div
+          style="
+            align-content: center;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+          "
+        >
+          <div class="col my-auto"><span id="year"></span> © Aditya Rawat</div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- </div> -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".col-custom input").val("");
+        // console.log("Loaded");
+
+        $(".input-effect input").focusout(function () {
+          if ($(this).val() != "") {
+            $(this).addClass("has-content");
+          } else {
+            $(this).removeClass("has-content");
+          }
+        });
+
+        $(".input-effect textarea").focusout(function () {
+          if ($(this).val() != "") {
+            $(this).addClass("has-content");
+          } else {
+            $(this).removeClass("has-content");
+          }
+        });
+      });
+    </script>
+    <script></script>
+    <script>
+      var year = new Date().getFullYear();
+      document.getElementById("year").innerHTML = year;
+    </script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r118/three.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.js"
+    ></script>
+    <script type="text/javascript" src="js/vendor/hover-effect.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="https://unpkg.com/gsap@3/dist/MotionPathPlugin.min.js"></script>
+    <script src="https://assets.codepen.io/16327/MorphSVGPlugin3.min.js"></script>
+    <script src="https://assets.codepen.io/16327/DrawSVGPlugin3.min.js"></script> -->
+
+    <script src="js/app.js"></script>
+    <!-- https://github.com/gijsroge/tilt.js -->
+    <script src="https://unpkg.com/tilt.js@1.1.21/dest/tilt.jquery.min.js"></script>
+  </body>
+</html>
